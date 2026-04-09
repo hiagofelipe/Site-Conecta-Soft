@@ -917,11 +917,9 @@
     }
 
     .stat-check {
-      font-size: 2rem;
-      background: linear-gradient(135deg, var(--green-light), var(--blue-glow));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     /* Hero illustration */
@@ -974,8 +972,10 @@
     }
 
     .mini-icon {
-      font-size: 1.8rem;
       margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .mini-label {
@@ -1069,6 +1069,9 @@
       box-shadow: var(--shadow-green);
       animation: float 4s ease-in-out infinite;
       white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 7px;
     }
 
     .floating-badge-1 {
@@ -1799,9 +1802,10 @@
     }
 
     .dif-big-icon {
-      font-size: 2.6rem;
       min-width: 56px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     /* =============================================
@@ -1859,8 +1863,9 @@
       position: absolute;
       top: 24px;
       right: 28px;
-      font-size: 8rem;
-      opacity: 0.1;
+      width: 8rem;
+      height: 8rem;
+      opacity: 0.12;
       line-height: 1;
       transition: var(--transition);
     }
@@ -2605,7 +2610,8 @@
 
       <a href="https://wa.me/5561985682000?text=Olá%2C%20Felipe!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20automações."
         target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">
-        💬 Fale com o especialista
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Fale com o especialista
       </a>
 
       <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
@@ -2616,14 +2622,14 @@
 
   <!-- Mobile Nav -->
   <div class="nav-mobile" id="mobileNav" role="navigation" aria-label="Menu mobile">
-    <a href="#inicio" onclick="closeMobile()">🏠 Início</a>
-    <a href="#especialista" onclick="closeMobile()">👤 Especialista</a>
-    <a href="#servicos" onclick="closeMobile()">⚙️ Serviços</a>
-    <a href="#diferenciais" onclick="closeMobile()">⭐ Diferenciais</a>
-    <a href="#ambientes" onclick="closeMobile()">🗺️ Ambientes</a>
+    <a href="#inicio" onclick="closeMobile()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Início</a>
+    <a href="#especialista" onclick="closeMobile()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Especialista</a>
+    <a href="#servicos" onclick="closeMobile()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Serviços</a>
+    <a href="#diferenciais" onclick="closeMobile()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Diferenciais</a>
+    <a href="#ambientes" onclick="closeMobile()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg> Ambientes</a>
     <a href="https://wa.me/5561985682000?text=Olá%2C%20Felipe!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20automações."
       target="_blank" rel="noopener noreferrer" class="btn btn-primary"
-      style="text-align:center;justify-content:center;">💬 Fale com o especialista</a>
+      style="text-align:center;justify-content:center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Fale com o especialista</a>
   </div>
 
   <!-- ============================================================
@@ -2659,7 +2665,8 @@
           <div class="hero-cta">
             <a href="https://wa.me/5561985682000?text=Olá%2C%20Felipe!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20automações."
               target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              💬 Fale com o especialista
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Fale com o especialista
             </a>
             <a href="#servicos" class="btn btn-outline">Ver serviços</a>
           </div>
@@ -2676,7 +2683,7 @@
             </div>
             <div class="stat-sep"></div>
             <div class="stat-item">
-              <div class="stat-num stat-check">✓</div>
+              <div class="stat-num stat-check"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#stat-grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><defs><linearGradient id="stat-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#66bb6a"/><stop offset="1" stop-color="#42a5f5"/></linearGradient></defs><polyline points="20 6 9 17 4 12"/></svg></div>
               <div class="stat-label">Clientes satisfeitos</div>
             </div>
           </div>
@@ -2684,32 +2691,32 @@
 
         <!-- Hero Visual Card -->
         <div class="hero-visual">
-          <div class="floating-badge floating-badge-1">🌿 Rural &amp; Urbano</div>
+          <div class="floating-badge floating-badge-1"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg> Rural &amp; Urbano</div>
           <div class="hero-card-main">
             <div class="mini-cards">
               <div class="mini-card">
-                <div class="mini-icon">💡</div>
+                <div class="mini-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#66bb6a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div>
                 <div class="mini-label">Iluminação</div>
                 <div class="mini-status" style="color:var(--green-light)">
                   <span class="status-dot status-on"></span> Programada
                 </div>
               </div>
               <div class="mini-card">
-                <div class="mini-icon">📷</div>
+                <div class="mini-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
                 <div class="mini-label">Câmeras</div>
                 <div class="mini-status" style="color:var(--blue-light)">
                   <span class="status-dot status-blue"></span> Ativas
                 </div>
               </div>
               <div class="mini-card">
-                <div class="mini-icon">🐄</div>
+                <div class="mini-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="#66bb6a" stroke="none" aria-hidden="true"><circle cx="6.5" cy="3.5" r="1.5"/><circle cx="17.5" cy="3.5" r="1.5"/><circle cx="3" cy="9" r="1.5"/><circle cx="21" cy="9" r="1.5"/><path d="M12 8c-3.5 0-6 2.8-6 6C6 17 8 20 12 20s6-3 6-6c0-3.2-2.5-6-6-6z"/></svg></div>
                 <div class="mini-label">Alimentação</div>
                 <div class="mini-status" style="color:var(--green-light)">
                   <span class="status-dot status-on"></span> Agendada
                 </div>
               </div>
               <div class="mini-card">
-                <div class="mini-icon">⚙️</div>
+                <div class="mini-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
                 <div class="mini-label">Automações</div>
                 <div class="mini-status" style="color:var(--blue-light)">
                   <span class="status-dot status-blue"></span> Online
@@ -2725,7 +2732,7 @@
               <span class="bar-val">100%</span>
             </div>
           </div>
-          <div class="floating-badge floating-badge-2">⚡ 24/7 Monitoramento</div>
+          <div class="floating-badge floating-badge-2"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> 24/7 Monitoramento</div>
         </div>
       </div>
     </div>
@@ -2746,19 +2753,19 @@
         <div class="sobre-img-wrap reveal-left">
           <div class="sobre-img-box">
             <div class="sobre-icon-grid">
-              <div class="sg-cell">🏙️</div>
-              <div class="sg-cell highlight">⚡</div>
-              <div class="sg-cell">📡</div>
-              <div class="sg-cell">💡</div>
-              <div class="sg-cell highlight">🤖</div>
-              <div class="sg-cell">🔒</div>
-              <div class="sg-cell">🌾</div>
-              <div class="sg-cell highlight">📷</div>
-              <div class="sg-cell">🐄</div>
+              <div class="sg-cell"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="8" height="14" rx="1"/><rect x="13" y="3" width="8" height="19" rx="1"/><line x1="6" y1="12" x2="8" y2="12"/><line x1="6" y1="15" x2="8" y2="15"/><line x1="6" y1="18" x2="8" y2="18"/><line x1="16" y1="7" x2="18" y2="7"/><line x1="16" y1="11" x2="18" y2="11"/><line x1="16" y1="15" x2="18" y2="15"/></svg></div>
+              <div class="sg-cell highlight"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+              <div class="sg-cell"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8a6.14 6.14 0 0 1 0 8.4"/><path d="M19.1 1.9a10.09 10.09 0 0 1 0 14.2"/><line x1="12" y1="9" x2="12" y2="22"/></svg></div>
+              <div class="sg-cell"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div>
+              <div class="sg-cell highlight"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div>
+              <div class="sg-cell"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+              <div class="sg-cell"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#66bb6a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V9"/><path d="M8 13c1.5-1.5 3.5-1.5 4 0"/><path d="M16 13c-1.5-1.5-3.5-1.5-4 0"/><path d="M8 17c1.5-1.5 3.5-1.5 4 0"/><path d="M16 17c-1.5-1.5-3.5-1.5-4 0"/><path d="M12 9c-1-2-3.5-2.5-5-1"/><path d="M12 9c1-2 3.5-2.5 5-1"/></svg></div>
+              <div class="sg-cell highlight"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+              <div class="sg-cell"><svg width="26" height="26" viewBox="0 0 24 24" fill="#66bb6a" stroke="none" aria-hidden="true"><circle cx="6.5" cy="3.5" r="1.5"/><circle cx="17.5" cy="3.5" r="1.5"/><circle cx="3" cy="9" r="1.5"/><circle cx="21" cy="9" r="1.5"/><path d="M12 8c-3.5 0-6 2.8-6 6C6 17 8 20 12 20s6-3 6-6c0-3.2-2.5-6-6-6z"/></svg></div>
             </div>
           </div>
           <div class="sobre-badge">
-            <div class="sobre-badge-icon">🏆</div>
+            <div class="sobre-badge-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg></div>
             <div class="sobre-badge-text">
               <strong>Líderes em automação</strong>
               <span>todo o Brasil</span>
@@ -2779,28 +2786,28 @@
 
           <div class="check-list">
             <div class="check-item">
-              <div class="check-icon">✓</div>
+              <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
               <div class="check-text">
                 <strong>Projetos personalizados</strong>
                 <p>Cada solução é desenvolvida de acordo com as necessidades específicas do cliente.</p>
               </div>
             </div>
             <div class="check-item">
-              <div class="check-icon">✓</div>
+              <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
               <div class="check-text">
                 <strong>Tecnologia de ponta</strong>
                 <p>Utilizamos os melhores equipamentos e plataformas disponíveis no mercado.</p>
               </div>
             </div>
             <div class="check-item">
-              <div class="check-icon">✓</div>
+              <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
               <div class="check-text">
                 <strong>Suporte contínuo</strong>
                 <p>Acompanhamos nossos clientes antes, durante e após a instalação.</p>
               </div>
             </div>
             <div class="check-item">
-              <div class="check-icon">✓</div>
+              <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
               <div class="check-text">
                 <strong>Mais de 10 anos de experiência</strong>
                 <p>Profissionais certificados com ampla vivência em automação urbana e rural.</p>
@@ -2840,12 +2847,12 @@
               </svg>
 
               <!-- Orbital service nodes -->
-              <div class="esp-orb-node blue-node  n1" title="Iluminação"         aria-hidden="true">💡</div>
-              <div class="esp-orb-node blue-node  n2" title="Câmeras"            aria-hidden="true">📷</div>
-              <div class="esp-orb-node blue-node  n3" title="Controle de Acesso" aria-hidden="true">🔒</div>
-              <div class="esp-orb-node green-node n4" title="Alimentação Animal" aria-hidden="true">🐄</div>
-              <div class="esp-orb-node green-node n5" title="Automação Rural"    aria-hidden="true">🌿</div>
-              <div class="esp-orb-node blue-node  n6" title="Personalizados"     aria-hidden="true">⚙️</div>
+              <div class="esp-orb-node blue-node  n1" title="Iluminação"         aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div>
+              <div class="esp-orb-node blue-node  n2" title="Câmeras"            aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+              <div class="esp-orb-node blue-node  n3" title="Controle de Acesso" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+              <div class="esp-orb-node green-node n4" title="Alimentação Animal" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="#66bb6a" stroke="none"><circle cx="6.5" cy="3.5" r="1.5"/><circle cx="17.5" cy="3.5" r="1.5"/><circle cx="3" cy="9" r="1.5"/><circle cx="21" cy="9" r="1.5"/><path d="M12 8c-3.5 0-6 2.8-6 6C6 17 8 20 12 20s6-3 6-6c0-3.2-2.5-6-6-6z"/></svg></div>
+              <div class="esp-orb-node green-node n5" title="Automação Rural"    aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#66bb6a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
+              <div class="esp-orb-node blue-node  n6" title="Personalizados"     aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
 
               <!-- Central hub -->
               <div class="esp-hub-wrap">
@@ -2876,10 +2883,10 @@
           </h2>
 
           <div class="esp-meta">
-            <span class="esp-chip blue">🎯 46 anos</span>
-            <span class="esp-chip green">🌿 Rural &amp; Urbano</span>
-            <span class="esp-chip blue">📚 Cursos certificados</span>
-            <span class="esp-chip green">🔧 +10 anos de prática</span>
+            <span class="esp-chip blue"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> 46 anos</span>
+            <span class="esp-chip green"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg> Rural &amp; Urbano</span>
+            <span class="esp-chip blue"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Cursos certificados</span>
+            <span class="esp-chip green"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> +10 anos de prática</span>
           </div>
 
           <p class="esp-bio">
@@ -2914,7 +2921,8 @@
 
           <a href="https://wa.me/5561985682000?text=Olá%2C%20Felipe!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20automações."
             target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            💬 Fale com o Felipe agora
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Fale com o Felipe agora
           </a>
         </div>
 
@@ -2941,7 +2949,7 @@
       <div class="servicos-grid">
 
         <div class="servico-card reveal" style="transition-delay:0.08s">
-          <div class="sc-icon-wrap blue-icon">💡</div>
+          <div class="sc-icon-wrap blue-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div>
           <h3 class="sc-title">Automação de Iluminação</h3>
           <p class="sc-desc">Controle total sobre a iluminação de qualquer ambiente com programação de horários,
             sensores e acionamento remoto via aplicativo.</p>
@@ -2954,7 +2962,7 @@
         </div>
 
         <div class="servico-card reveal" style="transition-delay:0.16s">
-          <div class="sc-icon-wrap blue-icon">📷</div>
+          <div class="sc-icon-wrap blue-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
           <h3 class="sc-title">Câmeras e Monitoramento</h3>
           <p class="sc-desc">Sistemas de vigilância de alta definição com acesso remoto, gravação em nuvem e alertas
             inteligentes de movimento.</p>
@@ -2967,7 +2975,7 @@
         </div>
 
         <div class="servico-card green-accent reveal" style="transition-delay:0.24s">
-          <div class="sc-icon-wrap green-icon">🐄</div>
+          <div class="sc-icon-wrap green-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="#66bb6a" stroke="none" aria-hidden="true"><circle cx="6.5" cy="3.5" r="1.5"/><circle cx="17.5" cy="3.5" r="1.5"/><circle cx="3" cy="9" r="1.5"/><circle cx="21" cy="9" r="1.5"/><path d="M12 8c-3.5 0-6 2.8-6 6C6 17 8 20 12 20s6-3 6-6c0-3.2-2.5-6-6-6z"/></svg></div>
           <h3 class="sc-title">Alimentação Animal Automatizada</h3>
           <p class="sc-desc">Sistemas de dosagem e distribuição de ração em horários programados, com controle de
             quantidade e registro de consumo.</p>
@@ -2980,7 +2988,7 @@
         </div>
 
         <div class="servico-card green-accent reveal" style="transition-delay:0.32s">
-          <div class="sc-icon-wrap green-icon">🌿</div>
+          <div class="sc-icon-wrap green-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#66bb6a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
           <h3 class="sc-title">Automação Rural</h3>
           <p class="sc-desc">Soluções específicas para o campo: irrigação, controle de porteiras, bombas d'água e outros
             sistemas agrícolas automatizados.</p>
@@ -2993,7 +3001,7 @@
         </div>
 
         <div class="servico-card reveal" style="transition-delay:0.40s">
-          <div class="sc-icon-wrap blue-icon">🔒</div>
+          <div class="sc-icon-wrap blue-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
           <h3 class="sc-title">Controle de Acesso</h3>
           <p class="sc-desc">Gestão de entrada e saída com biometria, cartão, senha ou reconhecimento facial para
             ambientes residenciais e comerciais.</p>
@@ -3006,7 +3014,7 @@
         </div>
 
         <div class="servico-card reveal" style="transition-delay:0.48s">
-          <div class="sc-icon-wrap blue-icon">⚙️</div>
+          <div class="sc-icon-wrap blue-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#42a5f5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
           <h3 class="sc-title">Automações Personalizadas</h3>
           <p class="sc-desc">Desenvolvemos qualquer solução de automação sob medida para atender necessidades
             específicas de cada cliente.</p>
@@ -3063,7 +3071,7 @@
             <div class="dif-desc">Equipe ágil, com prazo de entrega cumprido sem comprometer a qualidade.</div>
           </div>
           <div class="dif-card dif-icon-card">
-            <div class="dif-big-icon">🛡️</div>
+            <div class="dif-big-icon"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#66bb6a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
             <div>
               <div class="dif-label">Garantia e segurança</div>
               <div class="dif-desc">Todos os nossos projetos contam com garantia de até 90 dias sobre a instalação, além
@@ -3090,7 +3098,7 @@
 
       <div class="ambientes-grid">
         <div class="ambiente-card urbano reveal-left">
-          <div class="ambiente-bg-icon">🏙️</div>
+          <div class="ambiente-bg-icon"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="8" height="14" rx="1"/><rect x="13" y="3" width="8" height="19" rx="1"/><line x1="6" y1="12" x2="8" y2="12"/><line x1="6" y1="15" x2="8" y2="15"/><line x1="6" y1="18" x2="8" y2="18"/><line x1="16" y1="7" x2="18" y2="7"/><line x1="16" y1="11" x2="18" y2="11"/><line x1="16" y1="15" x2="18" y2="15"/></svg></div>
           <div>
             <span class="ambiente-tag tag-urbano">Ambiente Urbano</span>
             <h3 class="ambiente-title">Cidades inteligentes começam em casa</h3>
@@ -3107,7 +3115,7 @@
         </div>
 
         <div class="ambiente-card rural reveal-right">
-          <div class="ambiente-bg-icon">🌾</div>
+          <div class="ambiente-bg-icon"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V9"/><path d="M8 13c1.5-1.5 3.5-1.5 4 0"/><path d="M16 13c-1.5-1.5-3.5-1.5-4 0"/><path d="M8 17c1.5-1.5 3.5-1.5 4 0"/><path d="M16 17c-1.5-1.5-3.5-1.5-4 0"/><path d="M12 9c-1-2-3.5-2.5-5-1"/><path d="M12 9c1-2 3.5-2.5 5-1"/></svg></div>
           <div>
             <span class="ambiente-tag tag-rural">Ambiente Rural</span>
             <h3 class="ambiente-title">Tecnologia que respeita o campo</h3>
@@ -3154,15 +3162,15 @@
         </div>
         <div class="contato-info">
           <div class="info-item">
-            <div class="info-icon">📍</div>
+            <div class="info-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="rgba(66,165,245,0.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
             <span>Todo o Brasil</span>
           </div>
           <div class="info-item">
-            <div class="info-icon">⏰</div>
+            <div class="info-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="rgba(66,165,245,0.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
             <span>Todos os dias, 7h às 23h</span>
           </div>
           <div class="info-item">
-            <div class="info-icon">✅</div>
+            <div class="info-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="rgba(66,165,245,0.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
             <span>Orçamento sem compromisso</span>
           </div>
         </div>
@@ -3183,12 +3191,12 @@
           <p>Automação inteligente para ambientes urbanos e rurais em <strong style="color:var(--text-primary)">todo o
               Brasil</strong>. Tecnologia que simplifica, conecta e transforma.</p>
           <div class="social-links">
-            <a href="#" class="social-link" title="Instagram" aria-label="Instagram">📸</a>
-            <a href="#" class="social-link" title="Facebook" aria-label="Facebook">📘</a>
-            <a href="#" class="social-link" title="LinkedIn" aria-label="LinkedIn">💼</a>
+            <a href="#" class="social-link" title="Instagram" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E4405F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="social-link" title="Facebook" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2" stroke="none" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="social-link" title="LinkedIn" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2" stroke="none" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
             <a href="https://wa.me/5561985682000?text=Olá%2C%20Felipe!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20automações."
               target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp"
-              aria-label="WhatsApp">💬</a>
+              aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366" stroke="none" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
           </div>
         </div>
 
@@ -3218,9 +3226,9 @@
           <ul>
             <li><a
                 href="https://wa.me/5561985682000?text=Olá%2C%20Felipe!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20automações."
-                target="_blank" rel="noopener noreferrer">💬 WhatsApp</a></li>
-            <li><a href="#ambientes">📍 Todo o Brasil</a></li>
-            <li><a href="#cta-final">⏰ Todos os dias, 7h–23h</a></li>
+                target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:middle;margin-right:5px"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>WhatsApp</a></li>
+            <li><a href="#ambientes"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:middle;margin-right:5px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Todo o Brasil</a></li>
+            <li><a href="#cta-final"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:middle;margin-right:5px"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Todos os dias, 7h–23h</a></li>
           </ul>
         </div>
       </div>
